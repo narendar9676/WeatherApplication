@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    justify-content: space-between;
+}
+
+/* Main Weather Section */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.forecast-item {
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* Past Week Weather Section (Right Side) */
+.past-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.past-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    width: 100%;
+}
+
+.past-forecast-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.past-forecast-item h3 {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.past-forecast-item p {
+    font-size: 12px;
+    margin: 5px 0;
+}

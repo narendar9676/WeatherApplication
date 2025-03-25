@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./script.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Past Week Forecast (Right Side) -->
+        <div id="pastForecast" class="past-forecast"></div>
+
+        <!-- Main Content (Current & Daily Forecast) -->
+        <div class="main-content">
+            <h1>Weather App</h1>
+            <div class="input">
+                <input type="text" id="cityname" placeholder="Enter city name">
+                <button onclick="getdata()">Search</button>
+            </div>
+            
+            <div class="now">
+                <div id="locatindetid"></div>
+                <div id="icon"></div>
+                <div id="forecast" class="forecast"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./weather.js"></script>
+
+</body>
+</html>
