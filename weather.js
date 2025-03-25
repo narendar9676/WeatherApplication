@@ -2,9 +2,9 @@ let key = "6cee9a1329ad4ddd97a83343251303";
 
 function getdata() {
     let city = document.getElementById('cityname').value;
-    let currentAPI = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`;
-    let forecastAPI = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=1`;
-    let pastWeekAPI = `http://api.weatherapi.com/v1/history.json?key=${key}&q=${city}&dt=`;
+    let currentAPI = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`;
+    let forecastAPI = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=1`;
+    let pastWeekAPI = `https://api.weatherapi.com/v1/history.json?key=${key}&q=${city}&dt=`;
 
     axios.get(currentAPI)
         .then((result) => {
